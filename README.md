@@ -1,13 +1,17 @@
 # Portfolio Website
 自己紹介用の静的サイトです。  
 サイト上部に表示される波のシミュレーションを重点的に実装しました。  
-[FFT ocean baker](https://github.com/yamasa26/FFT-ocean-baker)でベイクされた画像テクスチャをもとに、シェーダーで波の表現を設定、javascriptで連番のテクスチャ画像をループ処理することで映像化しています。
+[FFT ocean baker](https://github.com/yamasa26/FFT-ocean-baker)でベイクされた画像テクスチャをもとに、シェーダーで波の表現を設定、javascriptで連番のテクスチャ画像をループ処理することで映像化しています。  
+<div><video controls src="<https://github.com/yamasa26/yamasa26.github.io/demo.mp4>" muted="false"></video></div>  
+
 ## 自慢したいポイント
 FFT oceanはリアルな波を再現できることから、主に映像作品やゲームなどで使用される技術です。  
 web上で動作するような作品もありますが、ほとんどが波単体の内容です。  
 私が調べた限り、webサイトの背景として使用する例はなかったと思います。  
 素敵な技術だと思うので、webデザインの表現の一つとして普及したらいいなと思います。
 ## 各ファイルの説明
+### demo.mp4
+波が動く様子のデモ動画です。
 ### ocean.vert
 波の形状変形の役割を持つファイルです。  
 波の上下の動きは、頂点シェーダーでメッシュの座標を直接操作することで表現されます。  
